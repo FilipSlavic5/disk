@@ -23,4 +23,33 @@ jobs:
       env:
          GITHUB_CONTEXT: ${{ toJson(github) }}
       run: echo "$GITHUB_CONTEXT"
+
+    - name: List directory content
+      run: ls -al
+
+    - name: Checkout
+      uses: actions/checkout@v4
+
+    - name: List directory content
+      run: ls -al
+
+    - name: List enviroment variable
+      run: env
+
+    - name: List processes
+      run: ps aux
+
+
+      
+
+
     
+
+
+    
+
+
+
+  
+
+     
